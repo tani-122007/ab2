@@ -1,0 +1,530 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #17212b;
+}
+
+.dashboard {
+    width: 100%;
+    max-width: 1550px;
+    margin: auto;
+    padding: 15px 25px 25px;
+    border-top: 5px solid #e8794f;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.header h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(30px, 4vw, 55px);
+    color: #07507c;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.header h2 {
+    font-size: clamp(30px, 3.5vw, 48px);
+    color: #064c78;
+    border-bottom: 4px solid #d88a64;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.sih-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #26343a;
+    margin-top: 5px;
+}
+
+.sih-logo img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+}
+
+.sih-logo strong {
+    display: block;
+    font-size: 19px;
+}
+
+.sih-logo span {
+    display: block;
+    font-size: 17px;
+}
+
+
+/* ================= STAT CARDS ================= */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin: 15px 0 25px;
+}
+
+.stat-card {
+    min-height: 150px;
+    background: #f1f1f1;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 20px;
+    border-left: 4px solid #e29a73;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.stat-card p {
+    font-size: 20px;
+    margin-bottom: 3px;
+    color: #343434;
+}
+
+.stat-card h3 {
+    font-size: 58px;
+    line-height: 1;
+}
+
+.stat-icon {
+    font-size: 55px;
+    width: 65px;
+    text-align: center;
+}
+
+.blue {
+    color: #08759b;
+}
+
+.green {
+    color: #009b68;
+}
+
+.orange {
+    color: #e47720;
+}
+
+.red {
+    color: #c9242e;
+}
+
+
+/* ================= MAIN ================= */
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    gap: 30px;
+}
+
+.section-title {
+    color: #064c78;
+    font-size: clamp(27px, 3vw, 40px);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.section-title span {
+    margin-right: 8px;
+}
+
+
+/* ================= DOCTOR TABLE ================= */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 18px;
+    border: 1px solid #d5d5d5;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 750px;
+}
+
+thead {
+    background: #f5d39d;
+}
+
+th {
+    padding: 17px 12px;
+    text-align: left;
+    font-size: 17px;
+}
+
+td {
+    padding: 12px;
+    border-top: 1px solid #d8d8d8;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+tbody tr:nth-child(even) {
+    background: #fafafa;
+}
+
+.status,
+.patients {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.status {
+    padding: 8px 13px;
+    font-size: 15px;
+}
+
+.patients {
+    width: 72px;
+    height: 38px;
+}
+
+.on-duty {
+    background: #08a552;
+}
+
+.on-leave {
+    background: #f28b00;
+}
+
+.surgery {
+    background: #e51d2a;
+}
+
+.green-p {
+    background: #06a348;
+}
+
+.orange-p {
+    background: #f28b00;
+}
+
+.red-p {
+    background: #e51d2a;
+}
+
+
+/* ================= SCHEDULE ================= */
+
+.schedule {
+    background: #f1f1f1;
+    border-radius: 35px 35px 20px 20px;
+    padding: 20px 15px;
+}
+
+.schedule .section-title {
+    margin-bottom: 15px;
+}
+
+.schedule-table {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.schedule-row {
+    display: grid;
+    grid-template-columns: 0.7fr 1.25fr 1.25fr 1.25fr;
+    align-items: center;
+    min-height: 40px;
+    background: #eeeeee;
+}
+
+.schedule-row > div {
+    text-align: center;
+    font-size: 14px;
+    padding: 4px;
+}
+
+.header-row {
+    background: #dedede;
+    font-weight: bold;
+    min-height: 45px;
+}
+
+.schedule-row:nth-child(odd) {
+    background: #e4e4e4;
+}
+
+.morning,
+.evening,
+.night {
+    display: block;
+    border-radius: 18px;
+    color: white;
+    padding: 8px 5px;
+    font-weight: bold;
+}
+
+.morning {
+    background: #087ba9;
+}
+
+.evening {
+    background: #ef7611;
+}
+
+.night {
+    background: #a7a7a7;
+}
+
+
+/* ================= PATIENT LOAD ================= */
+
+.patient-load {
+    margin-top: 22px;
+}
+
+.patient-load .section-title {
+    margin-bottom: 10px;
+}
+
+.load-text {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.load-bar {
+    width: 100%;
+    height: 23px;
+    background: linear-gradient(
+        to right,
+        #10a996 0%,
+        #10a996 35%,
+        #e3bd27 65%,
+        #ef7628 100%
+    );
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.load-progress {
+    height: 100%;
+    width: 68%;
+    background: transparent;
+}
+
+.load-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.load-info {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+    font-size: 15px;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1100px) {
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .right-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        align-items: start;
+    }
+
+    .patient-load {
+        margin-top: 0;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+    .dashboard {
+        padding: 10px;
+        border-top-width: 3px;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .header h1 {
+        font-size: 27px;
+        line-height: 1.15;
+    }
+
+    .header h2 {
+        font-size: 26px;
+        line-height: 1.15;
+    }
+
+    .sih-logo {
+        align-self: flex-end;
+    }
+
+    .sih-logo img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .sih-logo strong {
+        font-size: 13px;
+    }
+
+    .sih-logo span {
+        font-size: 12px;
+    }
+
+
+    /* STAT CARDS */
+
+    .stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .stat-card {
+        min-height: 105px;
+        padding: 10px;
+        gap: 7px;
+        border-radius: 13px;
+    }
+
+    .stat-card p {
+        font-size: 13px;
+    }
+
+    .stat-card h3 {
+        font-size: 38px;
+    }
+
+    .stat-icon {
+        font-size: 34px;
+        width: 35px;
+    }
+
+
+    /* MAIN */
+
+    .main-content {
+        display: block;
+    }
+
+    .section-title {
+        font-size: 25px;
+        margin-top: 18px;
+    }
+
+
+    /* TABLE */
+
+    .table-container {
+        border-radius: 12px;
+    }
+
+    table {
+        min-width: 750px;
+    }
+
+    th {
+        font-size: 14px;
+        padding: 12px 8px;
+    }
+
+    td {
+        font-size: 14px;
+        padding: 10px 8px;
+    }
+
+
+    /* RIGHT */
+
+    .right-section {
+        display: block;
+    }
+
+    .schedule {
+        margin-top: 20px;
+        padding: 12px 8px;
+        border-radius: 20px;
+    }
+
+    .schedule-row {
+        grid-template-columns: 0.55fr 1fr 1fr 1fr;
+    }
+
+    .schedule-row > div {
+        font-size: 11px;
+        padding: 3px;
+    }
+
+    .morning,
+    .evening,
+    .night {
+        padding: 7px 2px;
+        font-size: 10px;
+    }
+
+    .load-labels {
+        font-size: 11px;
+    }
+
+    .load-info {
+        font-size: 12px;
+    }
+}
+
+
+/* ================= SMALL PHONES ================= */
+
+@media (max-width: 400px) {
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card {
+        min-height: 85px;
+    }
+
+    .header h1 {
+        font-size: 23px;
+    }
+
+    .header h2 {
+        font-size: 22px;
+    }
+}

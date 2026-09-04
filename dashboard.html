@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors Management Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div>
+            <h2>Doctors Management Dashboard</h2>
+            <h3>Hospital Name:-</h3>
+        </div>
+
+        <div class="sih-logo">
+            <img src="sihq.jpeg" alt="Smart India Hackathon logo">
+            <div>
+                <strong>SMART INDIA</strong>
+                <strong>HACKATHON</strong>
+                <span>2026</span>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- TOP STAT CARDS -->
+    <section class="stats">
+
+        <div class="stat-card">
+            <div class="stat-icon blue">♧</div>
+            <div>
+                <p>Total Doctors</p>
+                <h3>48</h3>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon green">✓</div>
+            <div>
+                <p>On-Duty</p>
+                <h3>32</h3>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon orange">▣</div>
+            <div>
+                <p>On Leave</p>
+                <h3>8</h3>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon red">✚</div>
+            <div>
+                <p>In Surgery</p>
+                <h3>8</h3>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+        <!-- LEFT SIDE -->
+        <section class="left-section">
+
+            <h2 class="section-title">
+                <span>🧳</span> Doctor Directory
+            </h2>
+
+            <div class="table-container">
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Doctor ID</th>
+                            <th>Name</th>
+                            <th>Specialization</th>
+                            <th>Department</th>
+                            <th>Status</th>
+                            <th>Current Patients</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>D001</td>
+                            <td>Dr. A. Sharma</td>
+                            <td>Cardiology</td>
+                            <td>Cardiology</td>
+                            <td><span class="status on-duty">On-Duty</span></td>
+                            <td><span class="patients green-p">12</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>D012</td>
+                            <td>Dr. R. Patel</td>
+                            <td>Neurology</td>
+                            <td>Neuro</td>
+                            <td><span class="status on-duty">On-Duty</span></td>
+                            <td><span class="patients green-p">9</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>D023</td>
+                            <td>Dr. M. Khan</td>
+                            <td>Orthopedics</td>
+                            <td>Ortho</td>
+                            <td><span class="status on-leave">On Leave</span></td>
+                            <td><span class="patients orange-p">0</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>D034</td>
+                            <td>Dr. S. Iyer</td>
+                            <td>Surgery</td>
+                            <td>Surgery</td>
+                            <td><span class="status surgery">In Surgery</span></td>
+                            <td><span class="patients red-p">6</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>D045</td>
+                            <td>Dr. L. Singh</td>
+                            <td>Pediatrics</td>
+                            <td>Pediatrics</td>
+                            <td><span class="status on-duty">On-Duty</span></td>
+                            <td><span class="patients green-p">7</span></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT SIDE -->
+        <aside class="right-section">
+
+            <!-- DUTY SCHEDULE -->
+            <section class="schedule">
+
+                <h2 class="section-title">
+                    <span>▣</span> Duty Schedule (Week)
+                </h2>
+
+                <div class="schedule-table">
+
+                    <div class="schedule-row header-row">
+                        <div>Day</div>
+                        <div>Morning</div>
+                        <div>Evening</div>
+                        <div>Night</div>
+                    </div>
+
+                    <div class="schedule-row">
+                        <div>Mon</div>
+                        <div><span class="morning">Dr. Sharma</span></div>
+                        <div><span class="evening">Dr. Patel</span></div>
+                        <div><span class="night">Dr. Iyer</span></div>
+                    </div>
+
+                    <div class="schedule-row">
+                        <div>Tue</div>
+                        <div><span class="morning">Dr. Patel</span></div>
+                        <div><span class="evening">Dr. Khan</span></div>
+                        <div><span class="night">Dr. Sharma</span></div>
+                    </div>
+
+                    <div class="schedule-row">
+                        <div>Wed</div>
+                        <div><span class="morning">Dr. Iyer</span></div>
+                        <div><span class="evening">Dr. Singh</span></div>
+                        <div><span class="night">Dr. Patel</span></div>
+                    </div>
+
+                    <div class="schedule-row">
+                        <div>Thu</div>
+                        <div><span class="morning">Dr. Singh</span></div>
+                        <div><span class="evening">Dr. Sharma</span></div>
+                        <div><span class="night">Dr. Khan</span></div>
+                    </div>
+
+                    <div class="schedule-row">
+                        <div>Fri</div>
+                        <div><span class="morning">Dr. Khan</span></div>
+                        <div><span class="evening">Dr. Iyer</span></div>
+                        <div><span class="night">Dr. Singh</span></div>
+                    </div>
+
+                    <div class="schedule-row">
+                        <div>Sat</div>
+                        <div><span class="morning">Dr. Sharma</span></div>
+                        <div><span class="evening">Dr. Singh</span></div>
+                        <div><span class="night">Dr. Patel</span></div>
+                    </div>
+
+                    <div class="schedule-row">
+                        <div>Sun</div>
+                        <div><span class="morning">Dr. Patel</span></div>
+                        <div><span class="evening">Dr. Khan</span></div>
+                        <div><span class="night">Dr. Iyer</span></div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PATIENT LOAD -->
+            <section class="patient-load">
+
+                <h2 class="section-title">
+                    <span>▥</span> Patient Load Indicator
+                </h2>
+
+                <p class="load-text">
+                    Current Load: <b>34/50</b> Patients
+                </p>
+
+                <div class="load-bar">
+                    <div class="load-progress"></div>
+                </div>
+
+                <div class="load-labels">
+                    <span>Low 0-15</span>
+                    <span>Moderate 16-35</span>
+                    <span>High 36-50</span>
+                </div>
+
+                <div class="load-info">
+                    <span>• Average Occupancy: 68%</span>
+                    <span>• Critical Cases: 3</span>
+                </div>
+
+            </section>
+
+        </aside>
+
+    </div>
+
+</div>
+
+</body>
+</html>
